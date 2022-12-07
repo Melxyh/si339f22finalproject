@@ -79,7 +79,13 @@ footer{
 
 /* flex & grid design for images & more in Restuarant & cafe and bakery */
 
-.gallery{
+.gridgallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.flexgallery{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -134,6 +140,7 @@ body{
   display: none;
 }
 
+
 @media only screen and (min-width: 700px) {
   
   .button{
@@ -144,9 +151,13 @@ body{
   .removedisc {
     display: inherit;
   }
-
   .image{
     display: inherit;
+  }  
+  
+  .gridgallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .card{
